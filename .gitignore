@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+target/
+
+# Environment
+.env
+.env.local
+
+# ZK ceremony files — too large for GitHub (download via scripts/setup_ceremony.sh)
+*.ptau
+*.zkey
+
+# Build outputs
+build/
+dist/
+out/
+
+# Proof artifacts (generated at runtime)
+prover/proof.json
+prover/public.json
+prover/witness.wtns
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

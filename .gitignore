@@ -27,3 +27,7 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+stellar27.tar.gz
+stellar.tar.gz
+*.tar.gz
+target/

@@ -99,7 +99,9 @@ template KYCProof() {
     signal jurisdictionPass;
     jurisdictionPass <== 1 - jurisdictionBool.out;
 
-    valid <== ageCheck.out * scoreCheck.out * jurisdictionPass;
+    signal intermediate;
+    intermediate <== ageCheck.out * scoreCheck.out;
+    valid <== intermediate * jurisdictionPass;
 }
 
 component main {public [minAge, minKycScore, commitment]} = KYCProof();
